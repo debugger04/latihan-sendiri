@@ -1,0 +1,11 @@
+<div class="container">
+    <form [formGroup]="todoForm" (ngSubmit)="saveTodo()">
+        <div class="input-group mb-3">
+            <div class="input-group-text">
+                <input class="form-check-input mt-0" type="checkbox" value="" formControlName="status">
+            </div>
+          <input id="name" name="name" type="text" class="form-control" formControlName="namaKegiatan">
+          <button type="submit" class="btn btn-outline-primary">Save</button>
+        </div>
+    </form>
+</div>

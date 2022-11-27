@@ -1,0 +1,14 @@
+<div class="container m-5">
+    <div class="row text-center">
+        <div class="col-md">
+            <h1 class="text-danger">Parent</h1>
+            <h2>{{ title }}</h2>
+            <h2>{{ namaOrang }}</h2>
+            <h2>{{ umur }}</h2>
+            <input type="text" name="message" id="message">
+        </div>
+        <div class="col-md">
+            <app-child [titleChild]="title" (namaOrangEmitter)="terimaNamanya($event)" [(umur)]="umur"></app-child>
+        </div>
+    </div>
+</div>
